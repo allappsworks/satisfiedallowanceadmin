@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+</head>
+<style>
+   @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oxygen:wght@300;400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+     background: #ECEAED;
+     font-family: "Montserrat", sans-serif;
+}
+  img {
+    width: 90px;
+  }
+  * {
+    margin: 0 auto;
+    width: 96%;
+  }
+  button {
+    width: 91%;
+            outline: none;
+            display: block;
+            margin: 0 auto;     
+            height: 39px;
+            border-radius: 10px;
+            border: none;
+            font-size: 14px;
+            background: #AC9FF3;
+            color: white;
+            font-family: "Montserrat", sans-serif;
+            margin-top: 24px;
+  }
+  a {
+                text-decoration: none;
+  }
+</style>
+<body>
+  <br>
+  <center>
+<img src="suc.png" alt="suc.png">
+<h2>Transfer Success</h2>
+<p id='amountTag' style="padding-top: 8px;"></p>
+<a href="home.html">
+<button>Ok! Thankyou</button>
+</a>
+</body>
+<script>
+  const urlParams = new URLSearchParams(window.location.search);
+  const amount = urlParams.get('amount');
+  const amountTag = document.getElementById('amountTag');
+  amountTag.innerHTML = 'Satisfied Allowance Has sent you a sum of ₦' + amount + ', you will be credited soon!'
+  
+</script>
+</html>
